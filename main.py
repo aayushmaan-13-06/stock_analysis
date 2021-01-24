@@ -128,7 +128,7 @@ try:
     
     if choice_col.upper().startswith(column_name.upper()) or choice_col.upper().startswith('B'):
         st.write('Descriptive Statistics Table for', column_name)
-        output_df_return, correlation_matrix_return, covariance_matrix_return = descriptive_analysis(data=return_dataframe)
+        output_df_return, correlation_matrix_return, covariance_matrix_return = descriptive_analysis(data=final_dataframe)
         st.write(output_df_return)
         st.write(correlation_matrix_return)
         st.write(covariance_matrix_return)
